@@ -2,7 +2,11 @@ import gameStateData from '../mockData/gameState.json';
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-let gameState = { ...gameStateData };
+let gameState = { 
+  ...gameStateData,
+  currentRoom: null,
+  selectedDifficulty: null
+};
 
 const gameStateService = {
   async getGameState() {
@@ -16,7 +20,7 @@ const gameStateService = {
     return { ...gameState };
   },
 
-  async resetGame() {
+async resetGame(roomId = null) {
     await delay(200);
     gameState = { 
       ...gameStateData,
@@ -24,8 +28,19 @@ const gameStateService = {
       hintsUsed: 0,
       solvedPuzzles: [],
       inventory: [],
-      isComplete: false
+      isComplete: false,
+      currentRoom: roomId,
+      selectedDifficulty: gameState.selectedDifficulty
     };
+    return { ...gameState };
+  },
+
+  async setCurrentRoom(roomId, difficulty = null) {
+    await delay(200);
+    gameState.currentRoom = roomId;
+    if (difficulty) {
+      gameState.selectedDifficulty = difficulty;
+    }
     return { ...gameState };
   },
 

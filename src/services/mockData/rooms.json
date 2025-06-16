@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 1,
+    "name": "The Scholar's Study",
+    "difficulty": "Easy",
+    "description": "A cozy library filled with ancient books and mysterious artifacts. Perfect for beginners to learn the basics of puzzle solving.",
+    "puzzleIds": [1, 2],
+    "estimatedTime": "15-20 minutes",
+    "theme": "academic",
+    "maxPuzzles": 2
+  },
+  {
+    "Id": 2,
+    "name": "The Grand Library",
+    "difficulty": "Medium",
+    "description": "A vast library with towering bookshelves and hidden passages. Moderate challenges await those who seek knowledge.",
+    "puzzleIds": [1, 2, 3],
+    "estimatedTime": "25-35 minutes",
+    "theme": "library",
+    "maxPuzzles": 3
+  },
+  {
+    "Id": 3,
+    "name": "The Master's Vault",
+    "difficulty": "Hard",
+    "description": "The ultimate challenge - a high-security vault with the most complex puzzles and ingenious traps. Only for the most skilled escape artists.",
+    "puzzleIds": [1, 2, 3, 4, 5],
+    "estimatedTime": "45-60 minutes",
+    "theme": "vault",
+    "maxPuzzles": 5
+  }
+]
