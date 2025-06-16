@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "name": "Ancient Key",
+    "description": "A weathered bronze key with mysterious engravings.",
+    "usableOn": ["door", "chest"],
+    "icon": "Key"
+  },
+  {
+    "Id": 2,
+    "name": "Crystal Orb",
+    "description": "A glowing crystal that pulses with inner light.",
+    "usableOn": ["pedestal", "door"],
+    "icon": "Zap"
+  },
+  {
+    "Id": 3,
+    "name": "Coded Scroll",
+    "description": "A parchment with strange symbols and numbers.",
+    "usableOn": ["door", "mechanism"],
+    "icon": "Scroll"
+  },
+  {
+    "Id": 4,
+    "name": "Temporal Gear",
+    "description": "A clockwork gear that seems to bend time around it.",
+    "usableOn": ["door", "mechanism"],
+    "icon": "Settings"
+  }
+]

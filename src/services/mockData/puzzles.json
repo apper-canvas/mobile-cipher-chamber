@@ -1,0 +1,94 @@
+[
+  {
+    "Id": 1,
+    "type": "cipher",
+    "title": "Ancient Cipher",
+    "description": "Decode the mysterious message on the wall using the Caesar cipher.",
+    "solution": "escape",
+    "cipherText": "HVFDSH",
+    "shift": 3,
+    "hints": [
+      "This is a Caesar cipher. Each letter is shifted by the same amount.",
+      "The shift amount is 3. A becomes D, B becomes E, etc.",
+      "Work backwards: H becomes E, V becomes S, etc."
+    ],
+    "isSolved": false,
+    "rewardItem": 1
+  },
+  {
+    "Id": 2,
+    "type": "pattern",
+    "title": "Symbol Sequence",
+    "description": "Complete the pattern by selecting the next symbol in the sequence.",
+    "solution": 2,
+    "sequence": [0, 1, 0, 1, 0],
+    "options": [0, 1, 2, 3],
+    "symbols": ["◇", "◆", "○", "●"],
+    "hints": [
+      "Look at the alternating pattern of the symbols.",
+      "The sequence alternates between two symbols.",
+      "The pattern is: empty, filled, empty, filled, empty... what comes next?"
+    ],
+    "isSolved": false,
+    "rewardItem": null
+  },
+  {
+    "Id": 3,
+    "type": "logic",
+    "title": "Logic Grid",
+    "description": "Use the clues to determine which key opens which lock.",
+    "solution": {"key1": "lock3", "key2": "lock1", "key3": "lock2"},
+    "clues": [
+      "The bronze key does not open the first lock.",
+      "The silver key opens the lock that comes before the bronze key's lock.",
+      "The gold key opens the middle lock."
+    ],
+    "keys": ["bronze", "silver", "gold"],
+    "locks": ["lock1", "lock2", "lock3"],
+    "keyMapping": {"key1": "bronze", "key2": "silver", "key3": "gold"},
+    "hints": [
+      "Start with the definitive clue: the gold key opens the middle lock.",
+      "If gold opens lock2, then silver must open lock1 (comes before).",
+      "That leaves bronze for lock3, which matches the first clue."
+    ],
+    "isSolved": false,
+    "rewardItem": 2
+  },
+  {
+    "Id": 4,
+    "type": "hidden",
+    "title": "Hidden Numbers",
+    "description": "Find all the hidden numbers in the room to unlock the combination.",
+    "solution": "4827",
+    "hiddenNumbers": [4, 8, 2, 7],
+    "foundNumbers": [],
+    "locations": [
+      {"number": 4, "x": 25, "y": 15, "found": false},
+      {"number": 8, "x": 65, "y": 35, "found": false},
+      {"number": 2, "x": 80, "y": 70, "found": false},
+      {"number": 7, "x": 15, "y": 85, "found": false}
+    ],
+    "hints": [
+      "Look carefully at the corners and edges of the room.",
+      "Some numbers might be partially hidden behind objects.",
+      "The combination is in the order you find them: top-left, top-right, bottom-right, bottom-left."
+    ],
+    "isSolved": false,
+    "rewardItem": 3
+  },
+  {
+    "Id": 5,
+    "type": "riddle",
+    "title": "Final Riddle",
+    "description": "Solve the riddle to find the final piece of the escape mechanism.",
+    "solution": "time",
+    "riddle": "I am not a river, but I flow. I am not alive, but I grow. I can be wasted, saved, or spent. What am I?",
+    "hints": [
+      "Think about something that moves forward constantly.",
+      "This thing can be managed but never stopped.",
+      "Everyone has the same amount of it each day, but uses it differently."
+    ],
+    "isSolved": false,
+    "rewardItem": 4
+  }
+]
