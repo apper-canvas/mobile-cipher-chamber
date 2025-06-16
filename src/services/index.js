@@ -9,5 +9,3 @@ export {
   puzzleService,
   roomService
 };
-export { default as puzzleService } from './api/puzzleService.js';
-export { default as itemService } from './api/itemService.js';
